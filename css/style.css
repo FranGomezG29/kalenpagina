@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUENTE GLOBAL */
+body {
+    font-family: "Oswald", sans-serif; /* 🔥 ahora aplica a TODO */
+    background-image: url("../imagenes/galaxia.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* overlay oscuro */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+/* MAIN */
+main {
+    padding: 40px 0;
+}
+
+/* CONTENIDO CENTRADO */
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid violet;
+}
+
+/* TITULOS */
+h1 {
+    color: blueviolet;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* NAVBAR */
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+
+    height: 140px;
+    padding: 0 30px;
+
+    /* fondo más pro */
+    background: linear-gradient(90deg, #0a0a0a, #1a1a1a);
+
+    /* borde violeta estilo LoL */
+    border-bottom: 2px solid violet;
+
+    /* forma más linda */
+    border-radius: 0 0 25px 25px;
+
+    /* glow suave */
+    box-shadow: 0 5px 20px rgba(138, 43, 226, 0.4);
+}
+
+/* LOGO CENTRADO */
+.logokalen {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* 🔥 bajé de 300 para que no rompa */
+}
+
+/* NAV LINKS */
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(170, 118, 219);
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0a0a0a;
+    color: white;
+    margin-top: 50px;
+    padding: 40px 20px 20px;
+}
+
+.footer-contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    color: violet;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    color: violet;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+/* CARDS */
+.ventajas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.card {
+    width: 300px;
+    padding: 16px;
+    border: 1px solid violet;
+    border-radius: 16px;
+    background-color: #0d0d0d;
+}
+
+.card h4,
+.card h5 {
+    text-align: center;
+}
+
+.card h5 {
+    margin: 16px 0;
+    color: white;
+    border: 1px solid violet;
+}
+
+.card p {
+    color: white;
+}
+
+.card img {
+    width: 100%;
+}
+.contenedor-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #111;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid violet;
+}
+
+/* CAMPOS */
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+form label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* INPUTS Y TEXTAREA */
+form input,
+form textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background-color: #0d0d0d;
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+
+/* BOTÓN */
+.btn-enviar {
+    background-color: violet;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* HOVER */
+.btn-enviar:hover {
+    background-color: rgb(170, 118, 219);
+}
